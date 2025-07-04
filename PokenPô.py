@@ -35,7 +35,7 @@ listaC = [['Blastoise', 'Empoleon', 'Kyogre', 'Swampert'],
 
 
 # FUNÇÃO PRINCIPAL DO JOGO
-def playGame():
+def playGame():     função de iniciar o jogo
     limpaTela()         # Limpa a tela(Pulando 50 linhas) para iniciar o game
     mostrarCabecalho(msgsCab)       # Mostra a msg do cabeçalho
     mostraMenu(msgsMenu)        # Mostra msg do menu
@@ -45,7 +45,7 @@ def playGame():
     opcoes = ['1', '2', '3', '4', '5']      # Variavel usada para mostrar quais digitos o usuario deve usar
     while not validaValue(resp, opcoes):        # Verifica se a entrada do usario é compativel com a variavel opcoes
         resp = getValue(msg)    
-        userElemento = resp
+        userElemento = resp     # userElemento ira receber resp assim quando usado sera a escolha do usuario como elemento 
     sleep(1)        # Cria um intervalo de tempo antes dos próximos códigos serem ativados
     limpaTela()     # Limpa a tela(Pulando 50 linhas) para iniciar o game
     userElemento = int(resp)    # Transforma a variavel resp em um inteiro
@@ -56,7 +56,7 @@ def playGame():
     while not validaValue(resp, opcoes):        # Valida se a resposta do usuario e compativel com as opções da lista 'opcoes'
         resp = getValue(msg)        # Da opção para o usario digitar novamente 
     
-    userPokemon = int(resp)
+    userPokemon = int(resp)     #Transforma userPokemon em um inteiro de resp para quando for usado 
     sleep(1)        # Cria um intervalo de tempo antes dos próximos códigos serem ativados
     limpaTela()     # Limpa a tela(Pulando 50 linhas) para iniciar o game
     PcjogadaElemento = random.randint(1,5)        # Seleciona um elemento aleatorio(Da 'listaelementos') para o Pc
@@ -96,5 +96,5 @@ def playGame():
         sleep(1)        # Cria um intervalo de tempo antes dos próximos códigos serem ativados
         playGame()
     else:       # Caso não o sistema agrade por ter jogado
-        mostrarCabecalho(['Obrigado por jogar!', 'Até a próxima!'])
-playGame()
+        mostrarCabecalho(['Obrigado por jogar!', 'Até a próxima!'])     #Mostra cabeçalo com a msg 'Obrigado por jogar!', 'Até a próxima!'
+playGame()      # função de iniciar o jogo
