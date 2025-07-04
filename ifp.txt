@@ -1,0 +1,36 @@
+01. Entrada 
+Arquivo: meu_projeto.py
+linha : 44 resp = getValue(msg)
+Explicação: A variável resp recebe getValue que faz com que leia um valor que o usuario digite
+
+02. Saída:
+Arquivo: meu_projeto
+linha :  80 mostrarCabecalho([f"{listaC[userElemento][userPokemon-1]} e {PcjogadaPokemon} se anularam", 'Empate'])
+Explicação: caso uma condição for atendida ele mostrara uma msg na tela com a escolha de pokemon que o usuario escolheu com o pokemon aleatorio do PC, junto escrito que eles se anularam
+
+03.     Variáveis 
+Arquivo: meu_projeto.py
+linha : 14 msg = ' '
+Explicação: Transforma a variavel 'msg' em string para não haver falhas durante a ativação de outros códigos que nececitem desta variavel
+
+04. Operadores 
+Arquivo: meu_projeto.py
+linha : 76 if ( (userElemento == PcjogadaElemento) or
+        (userElemento == 2 and PcjogadaElemento == 5) or
+        (userElemento == 3 and PcjogadaElemento == 5)):
+Explicação: o comando 'or' que é um operador logico faz função de verificar se uma alternativa ou outra for atendida, caso uma delas seja ele mostrara uma msg de Empate
+
+05. Estrutura de Decisão
+Arquivo: meu_projeto.py
+linha : 63  if PcjogadaElemento == 1:
+Explicação O 'if' é uma estrutura de decisão porque caso oq ele requisita for atendido outro codigo sera ativo, e neste caso se PcjogadaElemento for igual a 1 sera sorteado um pokemon do tipo Água para o PC
+
+06. Estrutura de Repetição
+Arquivo: meu_projeto.py
+linha : 56 while not validaValue(resp, opcoes):
+Explicação: executa um bloco de código repetidamente enquanto a condição especificada for falsa, e neste caso até o valor digitado estiver entre as condições pedidas, e for um numero
+
+07. Sub-rotinas
+Arquivo: meu_projeto.py
+linha : 39 limpaTela()
+Explicação: limpaTela(), é um conjunto de codigo composto em apenas um só que faz com que faz com que se pule 50 linhas em branco dando a impressão de um tela limpa
